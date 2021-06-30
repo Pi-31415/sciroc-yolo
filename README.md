@@ -1,5 +1,5 @@
 <p>
-This is a personal implementation of YOLO v5 for SciRoc.
+This is a personal implementation of YOLO v5 by Pi.
 </p>
 
 Python >= 3.6.0 required with all [requirements.txt](https://github.com/ultralytics/yolov5/blob/master/requirements.txt) dependencies installed:
