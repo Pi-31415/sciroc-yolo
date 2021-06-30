@@ -8,7 +8,7 @@ To test the repository, run these commands first.
 
 ```bash
 $ git clone https://github.com/Pi-31415/yolo-personal
-$ cd yolov5
+$ cd yolo-personal
 $ pip3 install -r requirements.txt
 ```
 
