@@ -7,7 +7,7 @@ Python >= 3.6.0 required with all [requirements.txt](https://github.com/ultralyt
 To test the repository, run these commands first.
 
 ```bash
-$ git clone https://github.com/ultralytics/yolov5
+$ git clone https://github.com/Pi-31415/yolo-personal
 $ cd yolov5
 $ pip3 install -r requirements.txt
 ```
