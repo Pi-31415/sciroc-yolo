@@ -1,0 +1,7 @@
+
+train: ../train_data/images/train  # train images (relative to 'path') 128 images
+val: ../train_data/images/val  # val images (relative to 'path') 128 images
+
+# Classes
+nc: 8  # number of classes
+names: [ 'beer','cocacola','plastic_cup','bifrutas_tropical_can','biscuits_pack','sprite','pringles1','pringles2' ]  # class names
