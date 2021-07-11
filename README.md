@@ -17,13 +17,13 @@ Then, place the image you want to test into the yolov5 folder. In this case, it 
 Then run the detect command.
 
 ```
-$ python3 detect.py --weights runs/train/exp2/weights/last.pt --img 640 --conf 0.25 --source '439.png'
+$ python3 detect.py --weights runs/train/exp4/weights/last.pt --img 640 --conf 0.25 --source '3.png'
 ```
 
 The result will be in runs/detect/exp (read the terminal output for exact location)
 
 
-To train the model, train with 
+To train the model, train with
 ```
 python3 train.py --img 640 --batch 16 --epochs 1100 --data sciroc.yaml --weights yolov5s.pt --cache --nosave
 ```
