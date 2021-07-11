@@ -12,7 +12,7 @@ $ cd yolo-personal
 $ pip3 install -r requirements.txt
 ```
 
-Then, place the image you want to test into the yolov5 folder. In this case, it is called 439.png.
+Then, place the image you want to test into the yolov5 folder. In this case, it is called 3.png.
 
 Then run the detect command.
 
