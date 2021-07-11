@@ -21,3 +21,9 @@ $ python3 detect.py --weights runs/train/exp2/weights/last.pt --img 640 --conf 0
 ```
 
 The result will be in runs/detect/exp (read the terminal output for exact location)
+
+
+To train the model, train with 
+```
+python3 train.py --img 640 --batch 16 --epochs 1100 --data sciroc.yaml --weights yolov5s.pt --cache --nosave
+```
