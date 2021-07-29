@@ -41,4 +41,4 @@ rosrun image_view image_saver image:="/xtion/rgb/image_rect_color"
 
 # Notes
 
-- there are some warnings when installing required python packages 
+- There are some warnings when installing required python packages, but does not affect the simulation at all.
