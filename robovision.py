@@ -5,7 +5,7 @@ import json
 model = torch.hub.load('./', 'custom', path='runs/train/exp5/weights/last.pt', source='local')  # local repo
 
 # Images
-img = '49.png'  # or file, PIL, OpenCV, numpy, multiple
+img = 'left0055.jpg'  # or file, PIL, OpenCV, numpy, multiple
 
 # Inference
 results = model(img)
