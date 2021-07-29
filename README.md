@@ -36,3 +36,9 @@ To get images from ros node, run
 ```
 rosrun image_view image_saver image:="/xtion/rgb/image_rect_color"
 ```
+
+
+
+# Notes
+
+- there are some warnings when installing required python packages 
