@@ -27,3 +27,9 @@ To train the model, train with
 ```
 python3 train.py --img 640 --batch 16 --epochs 2000 --data sciroc.yaml --weights yolov5s.pt --cache --nosave
 ```
+
+To get images from ros node, run
+
+```
+rosrun image_view image_saver image:="/xtion/rgb/image_rect_color"
+```
