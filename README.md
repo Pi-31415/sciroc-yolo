@@ -8,6 +8,9 @@ To test the repository, run these commands first.
 
 ```bash
 $ git clone https://github.com/Pi-31415/yolo-personal
+$ sudo apt install python3-pip
+$ sudo -H pip3 install --upgrade pip
+$ sudo -H pip2 install --upgrade pip
 $ cd yolo-personal
 $ pip3 install -r requirements.txt
 ```
