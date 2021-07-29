@@ -1,5 +1,26 @@
-sudo apt install python3-pip
-sudo -H pip3 install --upgrade pip
-sudo -H pip2 install --upgrade pip
-cd yolo-personal
-pip3 install -r requirements.txt
+FROM registry.gitlab.com/competitions4/sciroc/dockers/sciroc
+
+LABEL maintainer="Daniel López Puig <daniel.lopez@pal-robotics.com>"
+
+ARG REPO_WS=/ws
+RUN mkdir -p RUNREPO_WS/src
+WORKDIR /home/user/RUNREPO_WS
+
+# TODO: Put inside ./ws your ROS packges
+COPY ./ws /home/user/ws/src
+
+# TODO: add here the debians you need to install
+#RUN apt install -y ros-melodic-<pkg_name> pal-ferrum-<pkg_name> <apt-pkg>
+RUN wget "https://raw.githubusercontent.com/Pi-31415/yolo-personal/main/requirements.txt"
+RUN sudo apt install python3-pip
+RUN sudo -H pip3 install --upgrade pip
+RUN sudo -H pip install --upgrade pip
+RUN pip3 install -r requirements.txt
+
+# Build and source your ros packages
+RUN bash -c "source /opt/pal/ferrum/setup.bash \
+    && catkin build \
+    && echo 'source /opt/pal/ferrum/setup.bash' >> ~/.bashrc \
+    && echo 'source /home/user/ws/devel/setup.bash' >> ~/.bashrc" 
+
+ENTRYPOINT ["bash"]
