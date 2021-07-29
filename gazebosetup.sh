@@ -1,6 +1,5 @@
-sudo -s
 cd ~/Desktop
-rm -rf sciroc-wip
+sudo rm -rf sciroc-wip
 git clone "https://gitlab.com/smart_nyuad/sciroc-wip"
 chmod -R +777 sciroc-wip
 cd sciroc-wip
