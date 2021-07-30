@@ -51,6 +51,7 @@ def detect():
     rate = rospy.Rate(10) # 10hz
     while not rospy.is_shutdown():
         file_list = os.listdir("/home/user/ws")
+        os.system("ls")
         for image in file_list:
             if ".jpg" in image:
                 image_name = image
