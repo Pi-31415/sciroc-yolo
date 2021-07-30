@@ -37,6 +37,11 @@ To get images from ros node, run
 rosrun image_view image_saver image:="/xtion/rgb/image_rect_color"
 ```
 
+To run simulation, run
+
+```
+roslaunch tiago_998_gazebo tiago_navigation.launch
+```
 
 
 # Notes
