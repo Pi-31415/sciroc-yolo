@@ -33,7 +33,7 @@
 #
 # Revision $Id$
 
-## Simple talker demo that published std_msgs/Strings messages
+## Simple detect demo that published std_msgs/Strings messages
 ## to the 'chatter' topic
 
 # cp ../exchange/* ./
@@ -43,11 +43,11 @@ import rospy
 from std_msgs.msg import String
 import os
 
-def talker():
+def detect():
     largest_id = 0
     largest_image_name = ""
-    pub = rospy.Publisher('chatter', String, queue_size=10)
-    rospy.init_node('talker', anonymous=True)
+    pub = rospy.Publisher('object_detector', String, queue_size=10)
+    rospy.init_node('detect', anonymous=True)
     rate = rospy.Rate(10) # 10hz
     while not rospy.is_shutdown():
         file_list = os.listdir("/home/user/ws")
@@ -67,6 +67,6 @@ def talker():
 
 if __name__ == '__main__':
     try:
-        talker()
+        detect()
     except rospy.ROSInterruptException:
         pass
