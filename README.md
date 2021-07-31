@@ -46,5 +46,5 @@ roslaunch tiago_998_gazebo tiago_navigation.launch
 
 # Notes
 
-- There are some warnings when installing required python packages, but does not affect the simulation at all.
+- There are some warnings (WARNING: Value for scheme.headers does not match.) when installing required python packages, but does not affect the simulation at all.
 - torch>=1.7.0 (831.4 MB) will take a while to download everytime docker container is started.
