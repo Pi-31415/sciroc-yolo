@@ -30,7 +30,7 @@ The result will be in runs/detect/exp (read the terminal output for exact locati
 
 To train the model, train with
 ```
-python3 train.py --img 640 --batch 16 --epochs 2000 --data sciroc.yaml --weights yolov5s.pt --cache --nosave
+python3 train.py --img 640 --batch 16 --epochs 2500 --data sciroc.yaml --weights yolov5s.pt --cache --nosave
 ```
 
 To get images from ros node, run
