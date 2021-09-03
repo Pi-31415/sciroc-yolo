@@ -22,8 +22,12 @@ Then, place the image you want to test into the yolov5 folder. In this case, it 
 Then run the detect command.
 
 ```
-$ python3 detect.py --weights runs/train/exp5/weights/last.pt --img 640 --conf 0.25 --source '3.png'
+$ python3 detect.py --weights runs/train/exp10/weights/last.pt --img 640 --conf 0.25 --source 'a.png'
 ```
+
+Note : 5 = first train
+       7 = with new ojects
+       10 = latest train
 
 The result will be in runs/detect/exp (read the terminal output for exact location)
 
