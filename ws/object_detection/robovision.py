@@ -15,4 +15,4 @@ results = model(img)
 json_results = json.loads(results.pandas().xyxy[0].to_json(orient="records"))
 
 for result in json_results:
-    print(result['name'])
+    print(result)
