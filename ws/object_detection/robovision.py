@@ -2,7 +2,13 @@ import torch
 import json
 
 def detect_duplicate(data):
-    distance_threshold = 100
+    # This is a function to detect the duplicate detections based on the object locations, and distance between them.
+    # This picks out the objects which are closer than distance_threshold and 
+    # mark them as duplicate double detections on same object.
+    # Then returns a list of those objects.
+    # Change the threshold if necessary, this is the mimum distance between objects
+    # From the robot camera, at the food spawning table, the distance between each food item is at least 200.
+    distance_threshold = 100 
     double_detection = False
     double_detected_objects_raw = []
     final_output = []
@@ -99,6 +105,7 @@ json_results = json.loads(results.pandas().xyxy[0].to_json(orient="records"))
 for result in json_results:
     print(result)
 
-RESSS = detect_duplicate(json_results)
 
-print(RESSS)
+# Call this function if you want a list of duplicate detections
+duplicate_results = detect_duplicate(json_results)
+print(duplicate_results)
