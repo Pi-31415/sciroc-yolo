@@ -13,7 +13,7 @@ def detect_duplicate(data):
     double_detected_objects_raw = []
     final_output = []
     print("\n-------------------------------------------------")
-    print("OBJECT DETECTION\nDetected Objects and their centre location are : ")
+    print("OBJECT DETECTION\nDetected Objects and their centre coordinates are : ")
     for result in data:
         print("    "+result['name']+" - ("+str(round((result['xmin']+result['xmax'])/2)) + ", " + str(round((result['ymin']+result['ymax'])/2))+")")
     import math
@@ -93,7 +93,7 @@ def detect_duplicate(data):
 model = torch.hub.load('./', 'custom', path='runs/train/exp10/weights/last.pt', source='local')  # local repo
 
 # Images
-img = 'left0055.jpg'  # or file, PIL, OpenCV, numpy, multiple
+img = 'test3.jpeg'  # or file, PIL, OpenCV, numpy, multiple
 
 # Inference
 results = model(img)
